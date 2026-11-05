@@ -1,1 +1,12 @@
 print("Hello Workflowforge!")
+from utils.helpers import validate_task_name
+print(validate_task_name(None))
+print(validate_task_name(123))
+print(validate_task_name(""))
+print(validate_task_name("   "))
+print(validate_task_name("Create Workflow"))
+print(isinstance("Hello", str))
+print(isinstance(123, int))
+print(isinstance(12.5, float))
+print(isinstance(True, bool))
+print(isinstance(None, str))
